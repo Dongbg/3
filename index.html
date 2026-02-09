@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Photo Gallery</title>
+  <style>
+    #image {
+      width: 400px;
+      height: 300px;
+      border: 2px solid #333;
+      margin-bottom: 20px;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      line-height: 300px;
+      font-size: 18px;
+    }
+
+    img {
+      width: 120px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="image">
+    Hover over an image below to display here.
+  </div>
+
+  <img src="images/img1.jpg"
+       alt="Mountain landscape"
+       onmouseover="upDate(this)"
+       onmouseout="undo()">
+
+  <img src="images/img2.jpg"
+       alt="Beach sunset"
+       onmouseover="upDate(this)"
+       onmouseout="undo()">
+
+  <img src="images/img3.jpg"
+       alt="City skyline"
+       onmouseover="upDate(this)"
+       onmouseout="undo()">
+
+  <script src="script.js"></script>
+</body>
+</html>
